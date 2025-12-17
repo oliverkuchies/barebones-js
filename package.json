@@ -1,0 +1,27 @@
+{
+  "name": "barebones",
+  "version": "1.0.0",
+  "description": "A barebones JavaScript library with hello world example",
+  "type": "module",
+  "main": "src/hello.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "start": "node -e \"import('./src/hello.js').then(m => m.main())\""
+  },
+  "keywords": [
+    "hello-world",
+    "barebones",
+    "example"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0",
+    "vitest": "^4.0.16"
+  }
+}
